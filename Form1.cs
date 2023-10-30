@@ -14,8 +14,8 @@ namespace Forma_de_ingreso
     public partial class Form1 : Form
     {
         private int intentosRestantes = 3;
-        private const string usuarioCorrecto = "Pedro";
-        private const string contraseñaCorrecta = "ElMarranas";
+        private const string usuarioCorrecto = "miriam";
+        private const string contraseñaCorrecta = "landeros070411";
         private bool formularioBloqueado = false;
 
         public Form1()
@@ -26,7 +26,7 @@ namespace Forma_de_ingreso
         {
             if (formularioBloqueado)
             {
-                MessageBox.Show("Ya no puedes intentar más. La aplicación se cerrará.");
+                MessageBox.Show("Has llegado al limite de intentos,intente mas tarde");
                 Application.Exit();
                 return;
             }
@@ -36,7 +36,7 @@ namespace Forma_de_ingreso
 
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña))
             {
-                MessageBox.Show("Por favor, complete todos los campos.");
+                MessageBox.Show("Ingresa tus datos porfavor");
             }
             else if (usuario.Length < 3)
             {
@@ -47,19 +47,19 @@ namespace Forma_de_ingreso
                 intentosRestantes--;
                 if (intentosRestantes > 0)
                 {
-                    MessageBox.Show("Contraseña incorrecta. Intentos restantes: " + intentosRestantes);
+                    MessageBox.Show("Contraseña incorrecta,te quedan: " + intentosRestantes);
                 }
                 else
                 {
                     BloquearFormulario();
                 }
             }
-            else if (usuario != usuarioCorrecto && contraseña == contraseñaCorrecta)
+            else if (usuario != usuarioCorrecto && contraseña == contraseñaCorrecta+" intentos")
             {
                 intentosRestantes--;
                 if (intentosRestantes > 0)
                 {
-                    MessageBox.Show("Usuario incorrecto. Intentos restantes: " + intentosRestantes);
+                    MessageBox.Show("Usuario incorrecto,te quedan: " + intentosRestantes+" intentos");
                 }
                 else
                 {
@@ -68,7 +68,7 @@ namespace Forma_de_ingreso
             }
             else if (usuario == usuarioCorrecto && contraseña == contraseñaCorrecta)
             {
-                MessageBox.Show("¡Bienvenido, Pedro!");
+                MessageBox.Show("Bienvenido");
                 this.Hide(); // Oculta la ventana de login
                 // Aquí debes mostrar la pantalla principal o realizar cualquier otra acción que desees.
 
@@ -95,6 +95,11 @@ namespace Forma_de_ingreso
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
