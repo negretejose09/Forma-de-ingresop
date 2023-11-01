@@ -63,6 +63,16 @@ namespace Forma_de_ingreso.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_570903845_fKaGmhzqQoMM1MjRp9cPAtDaDMcvru9j {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_570903845_fKaGmhzqQoMM1MjRp9cPAtDaDMcvru9j", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1db81333a7c040db725a62cca43e9017 {
             get {
                 object obj = ResourceManager.GetObject("1db81333a7c040db725a62cca43e9017", resourceCulture);
@@ -116,6 +126,27 @@ namespace Forma_de_ingreso.Properties {
         internal static System.Drawing.Bitmap _49f8f2659dfcba725b3367c96bc5d9511 {
             get {
                 object obj = ResourceManager.GetObject("49f8f2659dfcba725b3367c96bc5d9511", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ceramica_artesanal_tipico_pueblo_blanco_de_mijas_malaga_costa_del_sol_andalucia_al_sur_de_espana_fh8a06 {
+            get {
+                object obj = ResourceManager.GetObject("ceramica-artesanal-tipico-pueblo-blanco-de-mijas-malaga-costa-del-sol-andalucia-a" +
+                        "l-sur-de-espana-fh8a06", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap talavera_vector_tiles {
+            get {
+                object obj = ResourceManager.GetObject("talavera-vector-tiles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

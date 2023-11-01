@@ -82,5 +82,21 @@ namespace Forma_de_ingreso.Formas
                 textBox5.Text = dataGridView1.CurrentRow.Cells["Stock"].Value.ToString();
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void capturendatos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Trabajadores trabajadores = new Trabajadores();
+            trabajadores.Show();
+        }
     }
 }

@@ -36,13 +36,14 @@ namespace Forma_de_ingreso.Formas
             this.textBoxApellidos = new System.Windows.Forms.TextBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.BackgroundImage = global::Forma_de_ingreso.Properties.Resources._45840bd5e3ef08d9b4a1126a48b80a81;
+            this.groupBox1.BackgroundImage = global::Forma_de_ingreso.Properties.Resources.talavera_vector_tiles;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBoxContraseña);
@@ -55,12 +56,13 @@ namespace Forma_de_ingreso.Formas
             this.groupBox1.Size = new System.Drawing.Size(305, 443);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MediumPurple;
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(88, 282);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 35);
@@ -107,7 +109,7 @@ namespace Forma_de_ingreso.Formas
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.MediumPurple;
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(82, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 33);
@@ -138,5 +140,6 @@ namespace Forma_de_ingreso.Formas
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxApellidos;
         private System.Windows.Forms.TextBox textBoxNombre;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

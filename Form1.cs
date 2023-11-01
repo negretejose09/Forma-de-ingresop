@@ -14,8 +14,8 @@ namespace Forma_de_ingreso
     public partial class Form1 : Form
     {
         private int intentosRestantes = 3;
-        private const string usuarioCorrecto = "miriam";
-        private const string contraseñaCorrecta = "landeros070411";
+        private const string usuarioCorrecto = "Jose Negrete";
+        private const string contraseñaCorrecta = "Barron10";
         private bool formularioBloqueado = false;
 
         public Form1()
@@ -100,6 +100,11 @@ namespace Forma_de_ingreso
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
